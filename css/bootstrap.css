@@ -2328,8 +2328,28 @@ pre code {
         width: 41.66666667%
     }
     .col-sm-4 {
-        width: 33.33333333%
+        width: 33.33333333%;
+        padding-bottom: 30px;
     }
+    
+    .col-sm-4 h2 {
+        color: white;
+        cursor: pointer;
+    }
+
+    .col-sm-4 ul {
+        font-size: 17px;
+    }
+
+    .col-sm-4 ul li:hover {
+        transition: all 0.2s;
+        transform: scale(1.04);
+    }
+
+    .col-sm-4 ul li a:hover {
+        color: #fff!important;
+    }
+
     .col-sm-3 {
         width: 25%
     }
@@ -7682,7 +7702,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
