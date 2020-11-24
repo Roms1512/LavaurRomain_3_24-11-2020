@@ -2015,6 +2015,11 @@ pre code {
     margin-left: -15px
 }
 
+nav #bloc-7 .bloc-lg .row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .col-lg-1,
 .col-lg-10,
 .col-lg-11,
@@ -2304,8 +2309,14 @@ pre code {
         float: left
     }
     .col-sm-12 {
-        width: 100%
+        width: 100%;
     }
+
+    .col-sm-12 .img-1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
     .col-sm-11 {
         width: 91.66666667%
     }
@@ -2322,14 +2333,52 @@ pre code {
         width: 58.33333333%
     }
     .col-sm-6 {
-        width: 50%
+        width: 50%;
     }
+    
+    .col-sm-6 p {
+        font-size: medium;
+    }
+
+    .info {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info p:hover {
+        cursor: pointer;
+        transition: all 0.4s;
+        transform: scale(1.01);
+        color: black; 
+    }
+
+    .info p:active {
+        transition: 0s;
+        transform: scale(1);
+    }
+
     .col-sm-5 {
         width: 41.66666667%
     }
     .col-sm-4 {
         width: 33.33333333%;
         padding-bottom: 30px;
+    }
+    
+    section .bloc-md .col-sm-4:hover {
+        cursor: pointer;
+        transform: scale(1.04);
+        transition: all 0.4s;
+    }
+
+    section .bloc-lg .portfolio-row .col-sm-6 a {
+        overflow: hidden;
+    }
+
+    section .bloc-lg .portfolio-row .col-sm-6 a img:hover {
+        transform: scale(1.08);
+        transition: all 0.6s;
     }
     
     .col-sm-4 h2 {
