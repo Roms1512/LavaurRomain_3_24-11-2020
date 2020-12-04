@@ -2055,7 +2055,7 @@ nav #bloc-7 .bloc-lg .row {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 15px;
 }
 
 .col-xs-1,
@@ -2342,6 +2342,13 @@ nav #bloc-7 .bloc-lg .row {
         transform: scale(1);
     }
 
+    .info .map-google {
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
     .col-sm-5 {
         width: 41.66666667%
     }
@@ -2384,7 +2391,7 @@ nav #bloc-7 .bloc-lg .row {
     }
 
     .col-sm-3 {
-        width: 25%
+        width: 25%;
     }
     .col-sm-2 {
         width: 16.66666667%

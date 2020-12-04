@@ -136,6 +136,10 @@ a:hover {
     color: rgba(255, 255, 255, .6);
 }
 
+.d-bloc a .icon-md {
+    color: rgb(51, 51, 51);
+}
+
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
@@ -150,6 +154,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
+    transition: all 0.3s;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -485,7 +490,8 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
+    margin-top: 10px;
 }
 
 .icon-lg {
@@ -747,7 +753,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #2e2e2e!important;
+    font-size: 14px;
 }
 
 .portfolio-thumb {
@@ -788,7 +795,7 @@ h4 {
 }
 
 .tc-white {
-    color: #ffad88!important;
+    color: #fdc9b1!important;
 }
 
 .btn-atomic-tangerine {
@@ -993,8 +1000,10 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 20px 0;
     }
+
+
     .bloc-sm,
     .bloc-md {
         padding-left: 0;
