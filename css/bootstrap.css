@@ -2004,6 +2004,26 @@ nav #bloc-7 .bloc-lg .row {
     flex-direction: row-reverse;
 }
 
+@media (max-width: 768px) {
+    nav #bloc-7 .bloc-lg .row {
+        flex-direction: column-reverse;
+    }
+
+    nav #bloc-7 .bloc-lg .row .col-sm-6 #form_1 {
+        margin-bottom: 40px;
+    }
+
+    nav #bloc-7 .bloc-lg .row .info {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .map-google {
+        display: none;
+    }
+}
+
 .col-lg-1,
 .col-lg-10,
 .col-lg-11,
@@ -2296,6 +2316,10 @@ nav #bloc-7 .bloc-lg .row {
         width: 100%;
     }
 
+    .col-sm-12 .white {
+        color: blueviolet;
+    }
+
     .col-sm-12 .img-1 {
         font-size: 20px;
         padding-bottom: 30px;
@@ -2345,13 +2369,14 @@ nav #bloc-7 .bloc-lg .row {
     .info .map-google {
         margin-top: 20px;
         width: 100%;
-        height: 180%;
+        height: 100%;
         border-radius: 10px;
     }
 
     .col-sm-5 {
         width: 41.66666667%
     }
+
     .col-sm-4 {
         width: 33.33333333%;
         padding-bottom: 30px;
@@ -3212,7 +3237,13 @@ output {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: all 0.28s;
+}
+
+.form-control:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px  0.2px rgb(216, 216, 216);
 }
 
 .form-control:focus {
