@@ -3187,7 +3187,7 @@ input[type=search] {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
+    margin-top: 1px;
     line-height: normal
 }
 
@@ -3341,7 +3341,7 @@ input[type=search] {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
     position: absolute;
-    margin-top: 4px\9;
+    margin-top: 4px;
     margin-left: -20px
 }
 
@@ -4267,13 +4267,6 @@ fieldset[disabled] .btn-link {
     box-shadow: none
 }
 
-.btn-link,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:hover {
-    border-color: transparent
-}
-
 .btn-link:focus,
 .btn-link:hover {
     color: #23527c;
@@ -4377,7 +4370,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4513,7 +4506,7 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid
 }
 
 .dropup .dropdown-menu,
@@ -5838,7 +5831,6 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     color: #fff;
     cursor: default;
     background-color: #337ab7;
-    border-color: #337ab7
 }
 
 .pagination>.disabled>a,
@@ -6366,7 +6358,6 @@ a.thumbnail:hover {
 .media,
 .media-body {
     overflow: hidden;
-    zoom: 1
 }
 
 .media-body {
@@ -6491,7 +6482,6 @@ button.list-group-item {
     z-index: 2;
     color: #fff;
     background-color: #337ab7;
-    border-color: #337ab7
 }
 
 .list-group-item.active .list-group-item-heading,
@@ -6543,7 +6533,6 @@ button.list-group-item-success.active:focus,
 button.list-group-item-success.active:hover {
     color: #fff;
     background-color: #3c763d;
-    border-color: #3c763d
 }
 
 .list-group-item-info {
@@ -6577,7 +6566,6 @@ button.list-group-item-info.active:focus,
 button.list-group-item-info.active:hover {
     color: #fff;
     background-color: #31708f;
-    border-color: #31708f
 }
 
 .list-group-item-warning {
@@ -6611,7 +6599,6 @@ button.list-group-item-warning.active:focus,
 button.list-group-item-warning.active:hover {
     color: #fff;
     background-color: #8a6d3b;
-    border-color: #8a6d3b
 }
 
 .list-group-item-danger {
@@ -6645,7 +6632,6 @@ button.list-group-item-danger.active:focus,
 button.list-group-item-danger.active:hover {
     color: #fff;
     background-color: #a94442;
-    border-color: #a94442
 }
 
 .list-group-item-heading {
@@ -6962,7 +6948,6 @@ button.list-group-item-danger.active:hover {
 .panel-primary>.panel-heading {
     color: #fff;
     background-color: #337ab7;
-    border-color: #337ab7
 }
 
 .panel-primary>.panel-heading+.panel-collapse>.panel-body {
@@ -7909,24 +7894,12 @@ button.close {
     visibility: hidden
 }
 
-.text-hide {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0
-}
-
 .hidden {
     display: none !important
 }
 
 .affix {
     position: fixed
-}
-
-@-ms-viewport {
-    width: device-width
 }
 
 .visible-lg,
