@@ -51,7 +51,7 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-white">
+							<h1 class="text-center hero-bloc-text tc-white desc">
 								Parlons web design !
 							</h1>
 							<p class="text-center mg-lg tc-white tight-width-whitespace">
@@ -74,7 +74,7 @@
 													<label>
 														Nom
 													</label>
-													<input id="name" class="form-control" autofocus required />
+													<input aria-label="Nom Prénom" id="name" class="form-control" autofocus required placeholder="Ajoutez votre Nom et votre Prénom"/>
 												</div>
 											
 											<!-- Adresse mail -->
@@ -82,7 +82,7 @@
 													<label>
 														Adresse email
 													</label>
-													<input id="email" class="form-control" type="email" required />
+													<input aria-label="Adresse email" id="email" class="form-control" type="email" required placeholder="Ajouter votre adresse email"/>
 												</div>
 											
 											<!-- d'ou nous connaissez-vous -->
@@ -90,15 +90,15 @@
 													<label>
 														Comment nous avez-vous connu ?
 													</label>
-													<input class="form-control" type="name" required id="input_504" />
+													<input aria-label="Comment nous avez-vous connu ?" class="form-control" type="name" required id="input_504" placeholder="réseaux sociaux, moteur de recherche, etc"/>
 												</div>
 											
 											<!-- brief du projet -->
 												<div class="form-group">
 													<label>
-														Brief de votre projet (Ajoutez autant de détails que nécessaire)
+														Brief de votre projet
 													</label>
-													<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+													<textarea aria-label="Brief de votre projet" id="message" class="form-control" rows="4" cols="50" placeholder='(Ajoutez autant de détails que nécessaire)' required></textarea>
 												</div> 
 											
 											<!-- boutton -->
@@ -131,26 +131,17 @@
 								La chouette agence - Agence web basée à Lyon.<br>
 							</p>
 							<!-- reseaux sociaux -->
-								<div class="row row-no-gutters social">
-									<div class="col-sm-3">
-										<div class="text-center">
-											<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-										</div>
+								<div class="row row-no-gutters socials">
+									<div class="col-sm-3 text-center social"><i class="fa fa-twitter icon-md"></i>
 									</div>
-									<div class="col-sm-3">
-										<div class="text-center">
-											<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-										</div>
+									<div class="col-sm-3 text-center social">
+										<i class="fa fa-facebook icon-md"></i>
 									</div>
-									<div class="col-sm-3">
-										<div class="text-center">
-											<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-										</div>
+									<div class="col-sm-3 text-center social">
+										<i class="fa fa-dribbble icon-md"></i>
 									</div>
-									<div class="col-sm-3">
-										<div class="text-center">
-											<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-										</div>
+									<div class="col-sm-3 text-center social" href="index.html">
+										<i class="fa fa-instagram icon-md"></i>
 									</div>
 								</div>
 						</div>
