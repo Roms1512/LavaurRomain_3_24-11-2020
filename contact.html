@@ -7,10 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<meta name="robots" content="index, follow">
 		
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">  
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="./css/font-awesome.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 		
 		<link rel="alternate" hreflang="fr">
 		
@@ -26,6 +29,13 @@
 		
 		<!-- header -->
 			<header class="bloc bgc-white l-bloc " id="bloc-0">
+				<div class="center">
+					<input type="checkbox" class="changeTheme" aria-label="changement de theme">
+					<div class="icones">
+						<i class="fas fa-moon"></i>
+						<i class="fas fa-sun"></i>
+					</div>
+				</div>
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<!-- logo -->
@@ -150,6 +160,35 @@
 			</footer>
 		
 		<script src="./js/jqBootstrapValidation.js" defer></script>
+		<script defer>
+			const switchThemeBtn = document.querySelector('.changeTheme')
+			const switchThemeLogo = document.querySelector('.logo')
+        	let toggleTheme = 0;
+
+        switchThemeBtn.addEventListener('click', () => {
+            if(toggleTheme === 0) {
+                document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+                document.documentElement.style.setProperty('--background', '#262626');
+                toggleTheme++;
+            }
+            else {
+                document.documentElement.style.setProperty('--ecriture', '#262626');
+                document.documentElement.style.setProperty('--background', '#f1f1f1');
+                toggleTheme--;
+            }
+        })
+
+		switchThemeLogo.addEventListener('click', () => {
+			if(toggleTheme === 0) {
+                document.documentElement.style.setProperty('--invert', 'invert(0%)');
+				toggleTheme++;
+			} 
+			else {
+                document.documentElement.style.setProperty('--invert', 'invert(100%)');
+				toggleTheme--;
+			}
+		})
+		</script>
 	</body>
 	</html>
 	
