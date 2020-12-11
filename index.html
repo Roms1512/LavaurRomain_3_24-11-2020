@@ -275,16 +275,16 @@
 							</p>
 							<!-- reseau sociaux -->
 							<div class="row row-no-gutters socials">
-								<div class="col-sm-3 text-center social"><i class="fa fa-twitter icon-md"></i>
+								<div class="col-sm-3 text-center social"><i class="fab fa-twitter incon-md"></i>
 								</div>
 								<div class="col-sm-3 text-center social">
-									<i class="fa fa-facebook icon-md"></i>
+									<i class="fab fa-facebook-f incon-md"></i>
 								</div>
 								<div class="col-sm-3 text-center social">
-									<i class="fa fa-dribbble icon-md"></i>
+									<i class="fab fa-dribbble incon-md"></i>
 								</div>
 								<div class="col-sm-3 text-center social" href="index.html">
-									<i class="fa fa-instagram icon-md"></i>
+									<i class="fab fa-instagram incon-md"></i>
 								</div>
 							</div>
 						</div>
@@ -296,34 +296,25 @@
 		<script src="./js/bootstrap.js" defer></script>
 		<script src="./js/blocs.js" defer></script>
 		<script src="./js/jqBootstrapValidation.js" defer></script>
+
 		<script defer>
 			const switchThemeBtn = document.querySelector('.changeTheme')
-			const switchThemeLogo = document.querySelector('.logo')
         	let toggleTheme = 0;
 
         switchThemeBtn.addEventListener('click', () => {
             if(toggleTheme === 0) {
                 document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
                 document.documentElement.style.setProperty('--background', '#262626');
+				document.documentElement.style.setProperty('--invert', 'invert(100%)');
                 toggleTheme++;
             }
             else {
-                document.documentElement.style.setProperty('--ecriture', '#262626');
+				document.documentElement.style.setProperty('--ecriture', '#262626');
                 document.documentElement.style.setProperty('--background', '#f1f1f1');
+				document.documentElement.style.setProperty('--invert', 'invert(0%)');
                 toggleTheme--;
             }
         })
-
-		switchThemeLogo.addEventListener('click', () => {
-			if(toggleTheme === 0) {
-                document.documentElement.style.setProperty('--invert', 'invert(0%)');
-				toggleTheme++;
-			} 
-			else {
-                document.documentElement.style.setProperty('--invert', 'invert(100%)');
-				toggleTheme--;
-			}
-		})
 		</script>
 	</body>
 </html>

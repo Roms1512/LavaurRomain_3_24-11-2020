@@ -3239,7 +3239,7 @@ output {
 
 .form-control:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 10px  0.2px rgb(216, 216, 216);
+    box-shadow: 10px 10px 10px  0.2px rgb(150, 150, 150);
 }
 
 .form-control:focus {

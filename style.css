@@ -43,7 +43,7 @@ body {
 .center {
     position: fixed;
     top: 3%;
-    right: 1%;
+    right: 5%;
     z-index: 5;
     height: 20px;
     transform: translate(-50%, -50%);
@@ -84,8 +84,6 @@ input[type="checkbox"]::before {
 input:checked[type="checkbox"]::before {
     transform: translate(20px);
 }
-
-
 
 a {
     color: var(--ecriture);
@@ -753,6 +751,10 @@ a {
     color: #575757;
 }
 
+label {
+    color: var(--ecriture);
+}
+
 h2 {
     color: var(--ecriture);
 }
@@ -822,6 +824,7 @@ p {
     width: auto;
     color: rgb(54, 54, 54);
     cursor: pointer;
+    font-size: 40px;
 }
 
 .social:hover {
