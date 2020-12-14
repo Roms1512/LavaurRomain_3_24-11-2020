@@ -18,7 +18,6 @@ Header unset Cache-Control
 </IfModule>
 # END Cache-Control Headers
 
-
 # BEGIN Expires Headers
 <IfModule mod_expires.c>
 ExpiresActive On
