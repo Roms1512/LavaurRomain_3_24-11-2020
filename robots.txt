@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: /fonts
+sitemap: https://roms1512.github.io/LavaurRomain_3_24-11-2020/sitemap.xml
